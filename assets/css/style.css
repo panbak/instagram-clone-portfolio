@@ -141,3 +141,18 @@
   .content-tabs .active{
     opacity: 1;
 }
+
+input, textarea, .send-direct {
+    border-radius: 1.5rem!important;
+}
+
+.send-direct {
+    background-color: rgb(14, 14, 14);
+    color: white;
+    border: none;
+}
+
+.info-btn, .info-btn:hover, .info-btn:focus {
+    text-decoration: none;
+    color: inherit;
+}
