@@ -1,0 +1,143 @@
+.content-tabs a {
+    text-decoration: none;
+}
+
+.container {
+    width: 950px !important;
+}
+
+#mobile-stats {
+    display: none;
+}
+
+#desktop-stats{
+    display: inline-flexbox;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        width: 100% !important;
+    }
+
+    #mobile-stats {
+        display: flex;
+    }
+    
+    #desktop-stats{
+        display: none;
+    }
+}
+
+
+  
+@media screen and (max-width: 1050px) {
+    .large-screen-modal {
+        display: none;
+    }
+    .small-screen-modal {
+        display: flex;
+    }
+    .content-tabs a span {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .large-screen-modal {
+        display: flex;
+    }
+    .small-screen-modal {
+        display: none;
+    }
+    .content-tabs a span {
+        display: inline-block;
+    }
+}
+
+.custom-nav {
+    min-height: 0!important;
+    height: 55px!important;
+}
+
+.square {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.square:hover {
+    filter: brightness(50%);
+}
+
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
+
+/* The Modal (background) */
+.project-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 10%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 0;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    width: 80%;
+    border-radius: 0px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+    color: white;
+  }
+
+  .hashtag-area {
+      color: #196ca3;
+  }
+
+  .creator-info p, .bio p{
+    line-height: 0.6;
+  }
+
+  .project-date {
+      position: absolute;
+      bottom: 0;
+  }
+
+  #project-modal {
+    overflow-y:auto;
+  }
+
+  .content-tabs a{
+      opacity: 0.7;
+  }
+
+  .content-tabs .active{
+    opacity: 1;
+}
